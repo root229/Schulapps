@@ -10,9 +10,12 @@ body {
 /* ===== Header ===== */
 .site-header {
   background: #fff;
-  text-align: center;
+  text-align: left;
   padding: 4rem 1rem;
   box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+.maintitle{
+  text-align: center;
 }
 
 .site-header h1 {
@@ -96,6 +99,9 @@ body {
 main {
   flex: 1;
 }
+main h2 {
+  margin: 20px;
+}
 
 /* Footer-Styling */
 .site-footer {
@@ -109,19 +115,39 @@ main {
 blockquote {
   font-style: italic;
   color: #555;
-  border-left: 4px solid #4CAF50;
+  border-left: 4px solid black;
   padding-left: 10px;
   margin: 20px 0;
+  font-size: larger;
 }
 h1.lernen {
   color: #4CAF50;
+}
+h1.notizen {
+  color:rgb(241, 80, 107);
+}
+h1.kreatives{
+  color: #3b82f6;
 }
 li.app {
   margin-bottom: 10px;
   text-decoration: none;
   color:black;
 }
-li.app:hover {
-  text-decoration: underline;
-  text-decoration-color: darkorange;
+ul.app {
+  list-style: disc;
+  padding-left: 1.5em; /* Platz für den Bullet-Punkt */
+}
+
+li.app {
+  border: 2px solid black;  
+  padding: 0.5em 1em;       
+  margin-bottom: 0.5em;     
+  border-radius: 8px;       
+  background-color: #f9f9f9;
+  display: inline-block ;
+}
+a {
+  text-decoration: none;
+  color: #333;
 }

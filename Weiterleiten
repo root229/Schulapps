@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Weiterleitung...</title>
+    <script>
+      const zielURL = "https://google.com";
+
+      window.location.href = zielURL;
+    </script>
+  </head>
+  <body>
+    <p>Du wirst weitergeleitet. Falls nicht, <a id="link" href="#">klicke hier</a>.</p>
+
+    <script>
+      // Setzt auch den Link im Text richtig
+      document.getElementById("link").href = zielURL;
+    </script>
+  </body>
+</html>
